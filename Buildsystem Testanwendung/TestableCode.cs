@@ -11,5 +11,10 @@ namespace Buildsystem_Testanwendung
         {
             return a + b;
         }
+
+        public int? FeatureXA1(string s)
+        {
+            return s?.Length;
+        }
     }
 }
