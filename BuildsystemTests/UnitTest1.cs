@@ -15,14 +15,16 @@ namespace BuildsystemTests
             Assert.False(5 == testKlasse.Add(3, 3));
         }
 
+        [Fact]
         public void FailingTest()
         {
             var testKlasse = new TestableCode();
 
-            Assert.True(5 == testKlasse.Add(2, 3));
-            Assert.False(5 == testKlasse.Add(3, 3));
+            Assert.True(5 == testKlasse.Add(3, 3));
+            Assert.False(5 == testKlasse.Add(4, 3));
         }
 
+        [Fact]
         public void FeatureXA2Test()
         {
             var testKlasse = new TestableCode();
